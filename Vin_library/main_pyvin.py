@@ -26,7 +26,6 @@ def get_vin_info(vin):
         return vehicle.Make, vehicle.Model # Return make, model
     except Exception as e:
         # If there is an issue with the VIN, return NaN for all fields
-        print(f"Error with VIN '{vin}': {e}")
         return None, None
 
 # Step 3: Apply the get_vin_info function to the 'serie' column
